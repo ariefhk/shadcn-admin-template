@@ -26,7 +26,8 @@ export default function RootLayout({
         <NPProgresProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <ReactQueryProvider>
-              <NextAuthProvider>{children}</NextAuthProvider>
+              {children}
+              {/* <NextAuthProvider>{children}</NextAuthProvider> */}
             </ReactQueryProvider>
           </ThemeProvider>
         </NPProgresProvider>

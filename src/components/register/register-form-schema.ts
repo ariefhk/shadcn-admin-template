@@ -17,9 +17,4 @@ export const registerFormSchema = z
     }
   });
 
-// registerFormSchema.parse({
-//   name: "arief",
-//   email: "arief",
-//   password: "arief",
-//   confirmPassword: "arief1",
-// });
+export type registerFormType = z.infer<typeof registerFormSchema>;
